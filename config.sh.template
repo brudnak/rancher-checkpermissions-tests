@@ -1,0 +1,22 @@
+#!/bin/bash
+# Configuration file for checkPermissions tests
+# Copy this to config.sh and fill in your values
+
+export RANCHER_URL="https://your-rancher-url"
+export BEARER_TOKEN="your-bearer-token"
+export CLUSTER_ID="your-cluster-id"
+
+# Optional: Set a different user token for permission testing
+export LIMITED_USER_TOKEN="optional-limited-user-token"
+
+# For TC011 and TC012 - Project permission tests
+export PROJECT_ID="your-project-id"
+export PROJECT_OWNER_TOKEN="project-owner-bearer-token"
+export PROJECT_MEMBER_TOKEN="project-member-with-manage-members-role-token"
+
+# Colors for output
+export GREEN='\033[0;32m'
+export RED='\033[0;31m'
+export BLUE='\033[0;34m'
+export YELLOW='\033[1;33m'
+export NC='\033[0m' # No Color
